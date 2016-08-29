@@ -16,6 +16,7 @@ http.createServer(function(req, res){
     res.end('Hello World!\n');
     
     // 用来指定端口，监听接入的客户端连接。
+    // http://nodejs.cn/doc/node/http.html#http_server_listen_handle_callback
 }).listen(8124);
 
 console.log('Server is running on 8124.');
