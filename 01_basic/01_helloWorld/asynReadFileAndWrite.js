@@ -19,14 +19,15 @@ http.createServer(function(req, res){
         res.writeHead(200, {'content-type' : 'text/plain'});
         
         if (err) {
-            res.write('Could not find or open file for reading\n');
+            res.write('\n Could not find or open file for reading\n');
         } else {
             // if no error, write JS file to client
             // http.ServerRespone.write()  http://nodejs.cn/doc/node/http.html#http_response_write_chunk_encoding_callback
             res.write(data);
         }
 
-        // http://nodejs.cn/doc/node/http.html#http_response_end_data_encoding_callback
+        // respone is done.
+        // API ==> http://nodejs.cn/doc/node/http.html#http_response_end_data_encoding_callback
         res.end();
     });  
 
