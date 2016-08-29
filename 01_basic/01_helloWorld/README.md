@@ -7,3 +7,8 @@
 `node helloworld.js &`
 
 浏览器访问 http://localhost:8124/
+
+
+# asynReadFileAndWrite.js
+## sample描述
+使用异步的方式读取文件 helloworld.js
