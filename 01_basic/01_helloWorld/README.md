@@ -32,5 +32,9 @@
    opening undefined.txt
 此时，最后一行的"opening undefined.txt"，是因为浏览器可能会发送多个请求，此处浏览器发送了一个请求，寻找一个叫favicon.icon的文件。
 
+# invokeNode2000Times.js
+## sample描述
+使用HTTP模块向服务器端发送2000次同步GET请求，然后同时可使用浏览器访问该服务，达到异步测试的目的。
 
- 
+## 运行方法
+首先Node运行 simulteAsynAndSync.js，然后Node运行invokeNode2000Times.js
